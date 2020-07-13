@@ -14,33 +14,27 @@ In this sliding window protocol, a go-back-n method is used for retransmission. 
 
    
 
-Follow the below instructions to run the app.
+Follow the below instructions to run the program.
 
-1. Go to folder containing the java files
-
-   ```
-   cd tp
-   ```
-
-2. Compile the three java files
+1. Compile the three java files
 
    ```bash
    javac Segment.java Receiver.java Sender.java 
    ```
 
-3. Run receiver
+2. Run receiver
 
    ```bash
    java Receiver 8000 4 output
    ```
 
-4. Run sender in another terminal window under same directory
+3. Run sender in another terminal window under same directory
 
    ```bash
    java Sender 10.10.10.100 8000 4 input
    ```
 
-5. The transportation process get logged. Sender and receiver will exit after transportation finished.
+4. The transportation process get logged. Sender and receiver will exit after transportation finished.
 
 ```bash
 Server started, listening on port 8000
